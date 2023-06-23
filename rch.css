@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+}
+
+section ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(104, 154, 240);
+    padding: 80px;
+    align-items: center;
+}
+
+section ul li {
+    opacity: .5;
+    list-style: none;
+    position: relative;
+    width: 3px;
+    background-color: white;
+}
+
+section ul li.display {
+    opacity: .7;
+}
+
+section ul li time {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    transition: .5s;
+}
+
+section ul li.display time {
+    font-size: 2.5rem;
+    transition: .5s;
+}
+
+section ul li div {
+    opacity: 0;
+    position: relative;
+    left: 70px;
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    transition: .5s;
+}
+
+section ul li div h1 {
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+}
+
+section ul li.display div {
+    opacity: 1;
+    left: 45px;
+}
